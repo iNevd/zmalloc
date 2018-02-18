@@ -9,3 +9,11 @@ file(GLOB SOURCES_FIRE_CORE
         )
 
 add_library(zmalloc ${SOURCES_FIRE_CORE})
+
+
+install(TARGETS zmalloc
+        RUNTIME DESTINATION bin
+        LIBRARY DESTINATION lib
+        ARCHIVE DESTINATION libstatic)
+
+install(FILES ${PROJECT_SOURCE_DIR}/zmalloc.h DESTINATION include)
