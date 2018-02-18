@@ -3,12 +3,12 @@ project(zmalloc)
 
 set(CMAKE_CXX_STANDARD 11)
 
-file(GLOB SOURCES_FIRE_CORE
+file(GLOB SOURCES
         *.h
         *.cpp
         )
 
-add_library(zmalloc ${SOURCES_FIRE_CORE})
+add_library(zmalloc ${SOURCES})
 
 
 install(TARGETS zmalloc
